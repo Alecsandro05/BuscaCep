@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Busca Cep</title>
+  </head>
+  <body class="w-screen h-screen bg-zinc-800">
+    <main
+      class="w-full h-full flex flex-col justify-center items-center space-y-8"
+    >
+      <h1
+        class="text-5xl font-semibold text-center text-green-500 pt-8 tracking-wider"
+      >
+        BUSCA CEP
+      </h1>
+      <div class="flex flex-col gap-3">
+        <input
+          type="text"
+          placeholder="Digite seu cep"
+          id="cep"
+          class="p-2 rounded-md outline-none font-semibold"
+        />
+        <select
+          id="select"
+          class="p-2 rounded-md outline-none font-semibold cursor-pointer"
+        >
+          <option value="">Selecione uma opção</option>
+          <option value="ajax">Pesquiar CEP com AJAX</option>
+          <option value="fethcApi">Pesquiar CEP com Fetch Api</option>
+          <option value="async">Pesquiar CEP com Async / await</option>
+        </select>
+      </div>
+
+      <div id="result" class="hidden bg-green-500 p-3 rounded-lg flex-col">
+        <span class="font-semibold" id="textCep"></span>
+        <span class="font-semibold" id="logradouro"></span>
+        <span class="font-semibold" id="complemento"></span>
+        <span class="font-semibold" id="bairro"></span>
+        <span class="font-semibold" id="cidade"></span>
+        <span class="font-semibold" id="UF"></span>
+        <span class="font-semibold" id="timeRequeste"></span>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
