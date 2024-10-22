@@ -32,6 +32,7 @@ b) Fetch API
 c) Async/Await
 
 No caso da consulta ao CEP pode fazer uma página onde informa o CEP e tem três botões, cada botão usar uma forma diferente de fazer a consulta a API do Viacep.
+[https://busca-cep-beryl.vercel.app/](https://busca-cep-beryl.vercel.app/)
  
  # Pesquisa
 
@@ -200,3 +201,4 @@ Mesmo após a execução de _externa_, a função _minhaClosure_ (que é _intern
 - Luis Filipe - Desestruturação e AJAX
 - Murilo de Oliveira Pinho - Async / await
 - Jhonatan Natanel - Fetch api
+
